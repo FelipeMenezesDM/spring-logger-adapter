@@ -31,8 +31,16 @@ public class LogHandler {
         handlerPayload(message, payload, SeverityEnum.INFO);
     }
 
+    public static void warning(String message) {
+        logger.warn("{}", message);
+    }
+
     public static void warning(String message, LogPayload payload) {
         handlerPayload(message, payload, SeverityEnum.WARNING);
+    }
+
+    public static void error(String message) {
+        logger.error("{}", message);
     }
 
     public static void error(String message, LogPayload payload) {
