@@ -4,6 +4,8 @@ Biblioteca para gerenciamento de eventos de log para aplicações desenvolvidas 
 ## Tópicos
 - [Instalação com Maven](#instalação-com-maven)
 - [Deploy manual](#deploy-manual)
+- [Uso](#uso)
+- [Configuração](#configuração)
 
 ## Instalação com Maven
 Crie o arquivo de configuração do maven ou inclua o repositório e o servidor no arquivo já existente:
