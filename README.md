@@ -27,7 +27,7 @@ Crie o arquivo de configuração do maven ou inclua o repositório e o servidor 
         </repository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/felipemenezesdm/packages</url>
+          <url>https://maven.pkg.github.com/felipemenezesdm/spring-logger-adapter</url>
         </repository>
       </repositories>
     </profile>
