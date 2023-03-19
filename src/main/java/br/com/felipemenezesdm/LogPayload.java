@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import org.springframework.http.HttpStatus;
 import java.time.Instant;
+import java.util.Objects;
+
 import static java.time.Duration.between;
 import static java.time.ZoneId.systemDefault;
 import static java.time.format.DateTimeFormatter.ofPattern;
@@ -95,6 +97,10 @@ public class LogPayload {
     }
 
     public LogPayload setDuration(Instant startTime, Instant endTime) {
+        if(Objects.isNull(endTime)) {
+            endTime = Instant.now();
+        }
+
         this.duration = between(startTime, endTime).toMillis();
         return this;
     }
